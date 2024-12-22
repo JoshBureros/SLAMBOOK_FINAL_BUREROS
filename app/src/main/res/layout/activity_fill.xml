@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/primary_color">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- ImageView centered horizontally -->
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="120dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/fill"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center" />
+
+        <!-- TextInputLayout for First Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-90dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your first name"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Last Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your last name"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Nickname -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your nickname"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Hobby -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editHobby"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your hobby"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Favorite Food -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFavFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFavFood"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your favorite food"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Favorite Movie -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFavMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFavMovie"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your favorite movie"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Favorite Music -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputFavMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFavMusic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your favorite music"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/primary_color"
+            android:text="Create Slambook"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <!-- ProgressBar (Initially invisible, can be shown for loading) -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
